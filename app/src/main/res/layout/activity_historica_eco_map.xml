@@ -36,11 +36,11 @@
 
 
         <Button
-            android:id="@+id/idActualizarDantosHistorica"
+            android:id="@+id/idActualizarDatosHistorica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Actualizar dantos " />
+            android:text="Actualizar datos " />
 
         <Button
             android:id="@+id/idDejarComentarioHistorica"
@@ -57,7 +57,7 @@
             android:text="Calificar punto " />
 
         <Button
-            android:id="@+id/idVerComentarioHistorica"
+            android:id="@+id/idVerComentariosHistorica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/material_on_surface_disabled"

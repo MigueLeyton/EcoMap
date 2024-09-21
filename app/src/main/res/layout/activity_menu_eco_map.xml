@@ -38,16 +38,23 @@
 
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="218dp"
-            android:alpha="0.9"
-            app:srcCompat="@drawable/ecomap" />
+            android:layout_height="234dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/pngtree_geometry_light_rhombus_decorative_background_for_instagram_stories_cover_landing_page_picture_image_1437781"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ecomap"
+            android:alpha="0.9"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="35dp"
             android:layout_marginHorizontal="155dp"
             android:text="Tipos de puntos" />
 
@@ -92,5 +99,6 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Histórica" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

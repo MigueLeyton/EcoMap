@@ -25,7 +25,7 @@ public class menuEcoMap extends AppCompatActivity {
             return insets;
         });
 
-        // Configurar el botón para ir a vidrioEcoMap
+        // Configuración del btn vidrio
         Button btnVidrio = findViewById(R.id.idVidrio);
         btnVidrio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +34,7 @@ public class menuEcoMap extends AppCompatActivity {
             }
         });
 
-        // Configurar el botón para ir a plasticoEcoMap
+        // Configuración del btn plastico
         Button btnPlastico = findViewById(R.id.idPlastico);
         btnPlastico.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +43,7 @@ public class menuEcoMap extends AppCompatActivity {
             }
         });
 
-        // Configurar el botón para ir a cartonEcoMap
+        // Configuración del btn cartón
         Button btnCarton = findViewById(R.id.idCarton);
         btnCarton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,7 @@ public class menuEcoMap extends AppCompatActivity {
             }
         });
 
-        // Configurar el botón para ir a organicaEcoMap
+        // Configuración del btn orgánica
         Button btnOrganica = findViewById(R.id.idOrganica);
         btnOrganica.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +61,7 @@ public class menuEcoMap extends AppCompatActivity {
             }
         });
 
-        // Configurar el botón para ir a generalEcoMap
+        // Configuración del btn general
         Button btnGeneral = findViewById(R.id.idGeneral);
         btnGeneral.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,7 +70,7 @@ public class menuEcoMap extends AppCompatActivity {
             }
         });
 
-        // Configurar el botón para ir a historicaEcoMap
+        // Configuración del btn histórica
         Button btnHistorica = findViewById(R.id.idHistorica);
         btnHistorica.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,37 +80,37 @@ public class menuEcoMap extends AppCompatActivity {
         });
     }
 
-    // Método para redirigir a la actividad vidrioEcoMap
+    // Método para redirigir al activity vidrioEcoMap
     private void irAVidrioEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, vidrioEcoMap.class);
         startActivity(intent);
     }
 
-    // Método para redirigir a la actividad plasticoEcoMap
+    // Método para redirigir al activity plasticoEcoMap
     private void irAPlasticoEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, plasticoEcoMap.class);
         startActivity(intent);
     }
 
-    // Método para redirigir a la actividad cartonEcoMap
+    // Método para redirigir al activity cartonEcoMap
     private void irACartonEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, cartonEcoMap.class);
         startActivity(intent);
     }
 
-    // Método para redirigir a la actividad organicaEcoMap
+    // Método para redirigir al activity organicaEcoMap
     private void irAOrganicaEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, organicaEcoMap.class);
         startActivity(intent);
     }
 
-    // Método para redirigir a la actividad generalEcoMap
+    // Método para redirigir al activity generalEcoMap
     private void irAGeneralEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, generalEcoMap.class);
         startActivity(intent);
     }
 
-    // Método para redirigir a la actividad historicaEcoMap
+    // Método para redirigir al activity historicaEcoMap
     private void irAHistoricaEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, historicaEcoMap.class);
         startActivity(intent);

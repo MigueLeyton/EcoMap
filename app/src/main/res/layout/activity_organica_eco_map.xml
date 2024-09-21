@@ -38,11 +38,11 @@
 
 
         <Button
-            android:id="@+id/idActualizarDantosOrganica"
+            android:id="@+id/idActualizarDatosOrganica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Actualizar dantos " />
+            android:text="Actualizar datos " />
 
         <Button
             android:id="@+id/idDejarComentarioOrganica"
@@ -52,11 +52,11 @@
             android:text="Dejar comentario" />
 
         <Button
-            android:id="@+id/idCalfificarPuntoOrganica"
+            android:id="@+id/idCalificarPuntoOrganica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Calfificar punto " />
+            android:text="Calificar punto " />
 
         <Button
             android:id="@+id/idVerComentariosOrganica"

@@ -30,11 +30,11 @@ public class loginEcoMap extends AppCompatActivity {
             return insets;
         });
 
-        // Inicializar los campos de texto
+        // Campos de texto
         editTextNombre = findViewById(R.id.idNombre);
         editTextPassword = findViewById(R.id.idPassword);
 
-        // Configurar el botón para registrar
+        // Configuración del btn registrar
         Button btnRegistrar = findViewById(R.id.idRegistrarRegistro);
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +43,7 @@ public class loginEcoMap extends AppCompatActivity {
             }
         });
 
-        // Configurar el botón para salir
+        // Configuración del btn salir
         Button btnSalir = findViewById(R.id.idSalir);
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,7 @@ public class loginEcoMap extends AppCompatActivity {
             }
         });
 
-        // Configurar el botón para iniciar sesión
+        // Configuración del btn iniciar
         Button btnInicio = findViewById(R.id.idInicio);
         btnInicio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +62,7 @@ public class loginEcoMap extends AppCompatActivity {
         });
     }
 
-    // Método para redirigir a la actividad registroEcoMap
+    // Método para redirigir al activity registroEcoMap
     private void irARegistroEcoMap() {
         Intent intent = new Intent(loginEcoMap.this, registroEcoMap.class);
         startActivity(intent);
@@ -78,17 +78,18 @@ public class loginEcoMap extends AppCompatActivity {
         String nombre = editTextNombre.getText().toString();
         String password = editTextPassword.getText().toString();
 
-        // Aquí puedes implementar la lógica de verificación de credenciales
+        // Lógica del inicio de sesión
         if (nombre.isEmpty() || password.isEmpty()) {
             Toast.makeText(this, "Por favor, completa todos los campos.", Toast.LENGTH_SHORT).show();
         } else {
-            // Simulamos un inicio de sesión exitoso
+            // Inicio de sesión
             if (nombre.equals("miguel") && password.equals("1234")) {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
-                // Redirigir a la actividad menuEcoMap
+                // Redirigir al activity menuEcoMap
                 Intent intent = new Intent(loginEcoMap.this, menuEcoMap.class);
                 startActivity(intent);
-                finish(); // Cierra la actividad actual
+                // Se cierra el activity
+                finish();
             } else {
                 Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
             }

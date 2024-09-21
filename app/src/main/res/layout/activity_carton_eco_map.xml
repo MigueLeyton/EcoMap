@@ -35,11 +35,11 @@
             android:text="Cartón" />
 
         <Button
-            android:id="@+id/idActualizarDantosCarton"
+            android:id="@+id/idActualizarDatosCarton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Actualizar dantos" />
+            android:text="Actualizar datos" />
 
         <Button
             android:id="@+id/idDejarComentarioCarton"
