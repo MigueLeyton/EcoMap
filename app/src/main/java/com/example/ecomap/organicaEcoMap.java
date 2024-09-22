@@ -2,11 +2,13 @@ package com.example.ecomap;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -18,6 +20,14 @@ public class organicaEcoMap extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_organica_eco_map);
+
+        // Configura la Toolbar
+        Toolbar toolbar = findViewById(R.id.toolbarOrganica);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Habilita el botón de retroceso
+        getSupportActionBar().setTitle("Orgánica");
+        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -26,49 +36,42 @@ public class organicaEcoMap extends AppCompatActivity {
 
         // Configuración del btn actualizar datos
         Button btnActualizar = findViewById(R.id.idActualizarDatosOrganica);
-        btnActualizar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                irAActualizacionDatosEcoMap();
-            }
-        });
+        btnActualizar.setOnClickListener(v -> irAActualizacionDatosEcoMap());
 
         // Configuración del btn dejar comentario
         Button btnDejarComentario = findViewById(R.id.idDejarComentarioOrganica);
-        btnDejarComentario.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                irAComentarioEcoMap();
-            }
-        });
+        btnDejarComentario.setOnClickListener(v -> irAComentarioEcoMap());
 
         // Configuración del btn calificar punto
         Button btnCalificarPunto = findViewById(R.id.idCalificarPuntoOrganica);
-        btnCalificarPunto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                irACalificacionEcoMap();
-            }
-        });
+        btnCalificarPunto.setOnClickListener(v -> irACalificacionEcoMap());
 
         // Configuración del btn ver comentario
         Button btnVerComentarios = findViewById(R.id.idVerComentariosOrganica);
-        btnVerComentarios.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                irAVerComentariosEcoMap();
-            }
-        });
-
+        btnVerComentarios.setOnClickListener(v -> irAVerComentariosEcoMap());
     }
 
-    // MMétodo para redirigir al activity actualizacionDatosEcoMap
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                Intent intent = new Intent(organicaEcoMap.this, menuEcoMap.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK); // Limpia la pila de actividades
+                startActivity(intent);
+                finish(); // Cierra la actividad actual
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    // Método para redirigir al activity actualizacionDatosEcoMap
     private void irAActualizacionDatosEcoMap() {
         Intent intent = new Intent(organicaEcoMap.this, actualizacionDatosEcoMap.class);
         startActivity(intent);
     }
 
-    // Método para redirigir al activity cometarioEcoMap
+    // Método para redirigir al activity comentarioEcoMap
     private void irAComentarioEcoMap() {
         Intent intent = new Intent(organicaEcoMap.this, comentarioEcoMap.class);
         startActivity(intent);

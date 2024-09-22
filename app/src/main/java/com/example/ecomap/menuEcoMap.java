@@ -2,11 +2,13 @@ package com.example.ecomap;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -19,98 +21,79 @@ public class menuEcoMap extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_menu_eco_map);
 
+        // Configura la Toolbar
+        Toolbar toolbar = findViewById(R.id.toolbarMenu);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Habilita el botón de retroceso
+        getSupportActionBar().setTitle("Menú");
+        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        // Configuración del btn vidrio
+        // Configuración de los botones
         Button btnVidrio = findViewById(R.id.idVidrio);
-        btnVidrio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                irAVidrioEcoMap();
-            }
-        });
+        btnVidrio.setOnClickListener(v -> irAVidrioEcoMap());
 
-        // Configuración del btn plastico
         Button btnPlastico = findViewById(R.id.idPlastico);
-        btnPlastico.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                irAPlasticoEcoMap();
-            }
-        });
+        btnPlastico.setOnClickListener(v -> irAPlasticoEcoMap());
 
-        // Configuración del btn cartón
         Button btnCarton = findViewById(R.id.idCarton);
-        btnCarton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                irACartonEcoMap();
-            }
-        });
+        btnCarton.setOnClickListener(v -> irACartonEcoMap());
 
-        // Configuración del btn orgánica
         Button btnOrganica = findViewById(R.id.idOrganica);
-        btnOrganica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                irAOrganicaEcoMap();
-            }
-        });
+        btnOrganica.setOnClickListener(v -> irAOrganicaEcoMap());
 
-        // Configuración del btn general
         Button btnGeneral = findViewById(R.id.idGeneral);
-        btnGeneral.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                irAGeneralEcoMap();
-            }
-        });
+        btnGeneral.setOnClickListener(v -> irAGeneralEcoMap());
 
-        // Configuración del btn histórica
         Button btnHistorica = findViewById(R.id.idHistorica);
-        btnHistorica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                irAHistoricaEcoMap();
-            }
-        });
+        btnHistorica.setOnClickListener(v -> irAHistoricaEcoMap());
     }
 
-    // Método para redirigir al activity vidrioEcoMap
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                Intent intent = new Intent(menuEcoMap.this, loginEcoMap.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK); // Limpia la pila de actividades
+                startActivity(intent);
+                finish(); // Cierra la actividad actual
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    // Métodos para redirigir a las actividades correspondientes
     private void irAVidrioEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, vidrioEcoMap.class);
         startActivity(intent);
     }
 
-    // Método para redirigir al activity plasticoEcoMap
     private void irAPlasticoEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, plasticoEcoMap.class);
         startActivity(intent);
     }
 
-    // Método para redirigir al activity cartonEcoMap
     private void irACartonEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, cartonEcoMap.class);
         startActivity(intent);
     }
 
-    // Método para redirigir al activity organicaEcoMap
     private void irAOrganicaEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, organicaEcoMap.class);
         startActivity(intent);
     }
 
-    // Método para redirigir al activity generalEcoMap
     private void irAGeneralEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, generalEcoMap.class);
         startActivity(intent);
     }
 
-    // Método para redirigir al activity historicaEcoMap
     private void irAHistoricaEcoMap() {
         Intent intent = new Intent(menuEcoMap.this, historicaEcoMap.class);
         startActivity(intent);
