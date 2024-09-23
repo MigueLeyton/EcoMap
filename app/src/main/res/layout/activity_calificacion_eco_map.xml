@@ -53,6 +53,13 @@
             android:layout_marginHorizontal="35dp" />
 
         <Button
+            android:id="@+id/idGuardarCalificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/material_on_surface_disabled"
+            android:text="Guardar" />
+
+        <Button
             android:id="@+id/idSalirCalificacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
