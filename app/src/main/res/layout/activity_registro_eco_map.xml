@@ -29,12 +29,9 @@
             android:alpha="0.8"
             android:theme="?attr/actionBarTheme" />
 
-        <TextView
-            android:id="@+id/textView"
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginHorizontal="175dp"
-            android:text="Registro" />
+            android:layout_height="24dp" />
 
         <TextView
             android:id="@+id/textView6"
