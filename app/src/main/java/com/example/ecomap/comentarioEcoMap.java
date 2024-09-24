@@ -57,7 +57,7 @@ public class comentarioEcoMap extends AppCompatActivity {
         if (!comentarioTexto.isEmpty()) {
             // Guardar el comentario en SharedPreferences
             SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
-            prefs.edit().putString("comentario", comentarioTexto).apply();
+            prefs.edit().putString("Comentario", comentarioTexto).apply();
 
             // Mensaje de confirmación
             Toast.makeText(this, "Comentario guardado: " + comentarioTexto, Toast.LENGTH_SHORT).show();

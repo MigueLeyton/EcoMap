@@ -41,7 +41,7 @@ public class VerComentariosEcoMap extends AppCompatActivity {
 
         // Recuperar y mostrar el comentario
         SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
-        String comentarioGuardado = prefs.getString("comentario", "No hay comentarios.");
+        String comentarioGuardado = prefs.getString("Comentario", "No hay comentarios.");
         textViewComentarios.setText(comentarioGuardado);
     }
 
