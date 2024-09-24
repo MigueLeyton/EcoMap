@@ -1,8 +1,10 @@
 package com.example.ecomap;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +14,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class VerComentariosEcoMap extends AppCompatActivity {
+
+    private TextView textViewComentarios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,14 @@ public class VerComentariosEcoMap extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Inicializa el TextView para mostrar los comentarios
+        textViewComentarios = findViewById(R.id.idComentariosPrueba); // Asegúrate de tener este TextView en tu layout
+
+        // Recuperar y mostrar el comentario
+        SharedPreferences prefs = getSharedPreferences("MisPreferencias", MODE_PRIVATE);
+        String comentarioGuardado = prefs.getString("comentario", "No hay comentarios.");
+        textViewComentarios.setText(comentarioGuardado);
     }
 
     @Override
