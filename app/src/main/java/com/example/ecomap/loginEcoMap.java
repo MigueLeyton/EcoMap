@@ -83,7 +83,7 @@ public class loginEcoMap extends AppCompatActivity {
             Toast.makeText(this, "Por favor, completa todos los campos.", Toast.LENGTH_SHORT).show();
         } else {
             // Inicio de sesión
-            if (nombre.equals("miguel") && password.equals("1234")) {
+            if (nombre.equals("Miguel Leyton") && password.equals("Malg.2023")) {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
                 // Redirigir al activity menuEcoMap
                 Intent intent = new Intent(loginEcoMap.this, menuEcoMap.class);

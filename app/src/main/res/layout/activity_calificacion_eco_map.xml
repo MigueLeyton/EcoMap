@@ -30,11 +30,14 @@
             android:theme="?attr/actionBarTheme"/>
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="274dp"
-            android:alpha="0.8"
-            app:srcCompat="@drawable/ecologia" />
+            android:layout_height="234dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/pngtree_geometry_light_rhombus_decorative_background_for_instagram_stories_cover_landing_page_picture_image_1437781"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ecologia"
+            />
 
         <Space
             android:layout_width="match_parent"
@@ -42,8 +45,10 @@
 
         <TextView
             android:id="@+id/textView21"
+            style="@android:style/Widget.Material.TextView.SpinnerItem"
             android:layout_width="131dp"
             android:layout_height="43dp"
+            android:layout_marginHorizontal="140dp"
             android:text="Clificar punto " />
 
         <RatingBar

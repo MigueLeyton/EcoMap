@@ -30,10 +30,14 @@
             android:theme="?attr/actionBarTheme" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="219dp"
-            app:srcCompat="@drawable/ecomap" />
+            android:layout_height="234dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/pngtree_geometry_light_rhombus_decorative_background_for_instagram_stories_cover_landing_page_picture_image_1437781"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ecomap"
+            />
 
         <Space
             android:layout_width="match_parent"
@@ -41,8 +45,10 @@
 
         <TextView
             android:id="@+id/textView19"
-            android:layout_width="match_parent"
+            style="@android:style/Widget.Material.TextView.SpinnerItem"
+            android:layout_width="232dp"
             android:layout_height="38dp"
+            android:layout_marginHorizontal="120dp"
             android:text="Escribir comentario" />
 
         <EditText
