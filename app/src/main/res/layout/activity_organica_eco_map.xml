@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/fondoecomap"/>
+        android:src="@drawable/plandeestudios01_esp_pres_01_768x1018"/>
 
     <LinearLayout
         android:layout_width="match_parent"

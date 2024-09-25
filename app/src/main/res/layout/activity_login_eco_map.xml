@@ -49,7 +49,7 @@
             style="@android:style/Widget.Material.TextView.SpinnerItem"
             android:layout_width="128dp"
             android:layout_height="35dp"
-            android:layout_marginHorizontal="140dp"
+            android:layout_marginHorizontal="135dp"
             android:text="Inicio de sesión" />
 
         <TextView
@@ -75,8 +75,9 @@
             android:id="@+id/idPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese su contraseña"
-            android:padding="16dp" />
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="16dp"/>
 
         <Space
             android:layout_width="match_parent"
@@ -99,8 +100,12 @@
             style="@android:style/Widget.Material.TextView.SpinnerItem"
             android:layout_width="233dp"
             android:layout_height="25dp"
-            android:layout_marginHorizontal="120dp"
+            android:layout_marginHorizontal="115dp"
             android:text="¿Quieres registrarte?" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="23dp" />
 
         <Button
             android:id="@+id/idRegistrarRegistro"

@@ -28,6 +28,10 @@
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
         <TextView
             android:id="@+id/idComentariosPrueba"
             android:layout_width="match_parent"

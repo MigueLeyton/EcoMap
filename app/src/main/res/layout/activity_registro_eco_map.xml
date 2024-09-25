@@ -85,6 +85,10 @@
             android:hint="Ingrese su númeero de celular"
             android:padding="16dp" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
         <Button
             android:id="@+id/idRegistrarRegistro"
             android:layout_width="match_parent"

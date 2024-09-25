@@ -38,7 +38,7 @@
             android:background="@drawable/pngtree_geometry_light_rhombus_decorative_background_for_instagram_stories_cover_landing_page_picture_image_1437781"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/ecomap"
-            android:alpha="0.9"/>
+            />
 
         <Space
             android:layout_width="match_parent"
@@ -49,7 +49,7 @@
             style="@android:style/Widget.Material.TextView.SpinnerItem"
             android:layout_width="210dp"
             android:layout_height="35dp"
-            android:layout_marginHorizontal="135dp"
+            android:layout_marginHorizontal="130dp"
             android:text="Tipos de puntos" />
 
         <Button
