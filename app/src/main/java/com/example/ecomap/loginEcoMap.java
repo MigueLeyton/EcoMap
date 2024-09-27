@@ -17,6 +17,7 @@ public class loginEcoMap extends AppCompatActivity {
 
     private EditText editTextNombre;
     private EditText editTextPassword;
+    private bdEcoMap baseDeDatos; // Declarar la instancia de bdEcoMap
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,36 +31,24 @@ public class loginEcoMap extends AppCompatActivity {
             return insets;
         });
 
+        // Inicializar la base de datos
+        baseDeDatos = new bdEcoMap(this); // 'this' es el contexto correcto
+
         // Campos de texto
         editTextNombre = findViewById(R.id.idNombre);
         editTextPassword = findViewById(R.id.idPassword);
 
         // Configuración del btn registrar
         Button btnRegistrar = findViewById(R.id.idRegistrarRegistro);
-        btnRegistrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                irARegistroEcoMap();
-            }
-        });
+        btnRegistrar.setOnClickListener(v -> irARegistroEcoMap());
 
         // Configuración del btn salir
         Button btnSalir = findViewById(R.id.idSalir);
-        btnSalir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cerrarAplicacion();
-            }
-        });
+        btnSalir.setOnClickListener(v -> cerrarAplicacion());
 
         // Configuración del btn iniciar
         Button btnInicio = findViewById(R.id.idInicio);
-        btnInicio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                iniciarSesion();
-            }
-        });
+        btnInicio.setOnClickListener(v -> iniciarSesion());
     }
 
     // Método para redirigir al activity registroEcoMap
@@ -82,17 +71,17 @@ public class loginEcoMap extends AppCompatActivity {
         if (nombre.isEmpty() || password.isEmpty()) {
             Toast.makeText(this, "Por favor, completa todos los campos.", Toast.LENGTH_SHORT).show();
         } else {
-            // Inicio de sesión
-            if (nombre.equals("Miguel Leyton") && password.equals("Malg.2023")) {
+            // Verificar usuario en la base de datos
+            if (baseDeDatos.verificarUsuario(nombre, password)) {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
                 // Redirigir al activity menuEcoMap
                 Intent intent = new Intent(loginEcoMap.this, menuEcoMap.class);
                 startActivity(intent);
-                // Se cierra el activity
                 finish();
             } else {
                 Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
             }
         }
     }
+
 }

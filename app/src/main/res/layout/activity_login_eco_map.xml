@@ -75,7 +75,7 @@
             android:id="@+id/idPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña"
+            android:hint="Ingrese su contraseña"
             android:inputType="textPassword"
             android:padding="16dp"/>
 

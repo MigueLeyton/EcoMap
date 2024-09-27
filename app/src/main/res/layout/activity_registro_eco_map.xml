@@ -60,6 +60,34 @@
             android:padding="16dp" />
 
         <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Contraseña" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su contraseña"
+            android:inputType="textPassword"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repetir contraseña" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repetir su contraseña"
+            android:inputType="textPassword"
+            android:padding="16dp"/>
+
+        <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="25dp"
@@ -70,19 +98,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ingrese su correo electrónico"
-            android:padding="16dp" />
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:text="Celular" />
-
-        <EditText
-            android:id="@+id/idCelularRegistro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ingrese su númeero de celular"
             android:padding="16dp" />
 
         <Space
