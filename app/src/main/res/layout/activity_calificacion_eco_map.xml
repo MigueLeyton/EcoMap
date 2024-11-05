@@ -59,15 +59,17 @@
 
         <Button
             android:id="@+id/idGuardarCalificacion"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Guardar" />
 
         <Button
             android:id="@+id/idSalirCalificacion"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Salir" />
 

@@ -36,29 +36,33 @@
 
         <Button
             android:id="@+id/idActualizarDatosHistorica"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Actualizar datos " />
 
         <Button
             android:id="@+id/idDejarComentarioHistorica"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Dejar comentario" />
 
         <Button
             android:id="@+id/idCalificarPuntoHistorica"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Calificar punto " />
 
         <Button
             android:id="@+id/idVerComentariosHistorica"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Ver comentario " />
     </LinearLayout>

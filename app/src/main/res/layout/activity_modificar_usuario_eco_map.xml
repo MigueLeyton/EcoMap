@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".comentarioEcoMap">
+    tools:context=".modificarUsuarioEcoMap">
 
     <ImageView
         android:layout_width="match_parent"
@@ -16,68 +16,75 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarComentarios"
+            android:id="@+id/toolbarModificar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:alpha="0.9"
             android:background="@color/material_dynamic_primary30"
             android:minHeight="?attr/actionBarSize"
+            android:alpha="0.9"
             android:theme="?attr/actionBarTheme" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="234dp"
-            android:layout_centerInParent="true"
-            android:background="@drawable/pngtree_geometry_light_rhombus_decorative_background_for_instagram_stories_cover_landing_page_picture_image_1437781"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ecomap"
-            />
-
         <Space
             android:layout_width="match_parent"
             android:layout_height="24dp" />
-
-        <TextView
-            android:id="@+id/textView19"
-            style="@android:style/Widget.Material.TextView.SpinnerItem"
-            android:layout_width="232dp"
-            android:layout_height="38dp"
-            android:layout_marginHorizontal="120dp"
-            android:text="Escribir comentario" />
 
         <EditText
-            android:id="@+id/editTextComentario"
-            android:layout_width="355dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/idNuevoNombreModificar"
+            android:layout_width="360dp"
+            android:layout_height="68dp"
             android:layout_gravity="center"
-            android:padding="30dp"
-            android:gravity="start|top"
-            android:hint="Ingresar comentario" />
+            android:hint="Nuevo Nombre" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="24dp" />
+        <EditText
+            android:id="@+id/idNuevoApellidoModificar"
+            android:layout_width="360dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:hint="Nuevo Apellido" />
+
+        <EditText
+            android:id="@+id/idNuevoCorreoModificar"
+            android:layout_width="360dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:hint="Nuevo Correo Electrónico" />
+
+        <EditText
+            android:id="@+id/editTextNuevaContrasena"
+            android:layout_width="360dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:hint="Nueva Contraseña"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editTextNuevaContrasenaRepetir"
+            android:layout_width="360dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:hint="Repetir Nueva Contraseña"
+            android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/idGuardarComentario"
+            android:id="@+id/idGuardarCambios"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Guardar" />
+            android:text="Guardar Cambios" />
 
         <Button
-            android:id="@+id/idCancelarComentario"
+            android:id="@+id/idCancelarModificar"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Cancelar" />
+
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

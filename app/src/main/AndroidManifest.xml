@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EcoMap"
         tools:targetApi="31">
         <activity
+            android:name=".modificarUsuarioEcoMap"
+            android:exported="false" />
+        <activity
+            android:name=".loginMenuEcoMap"
+            android:exported="false" />
+        <activity
             android:name=".VerComentariosEcoMap"
             android:exported="false" />
         <activity

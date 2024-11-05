@@ -37,29 +37,33 @@
 
         <Button
             android:id="@+id/idActualizarDatosCarton"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Actualizar datos" />
 
         <Button
             android:id="@+id/idDejarComentarioCarton"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Dejar comentario " />
 
         <Button
             android:id="@+id/idCalificarPuntoCarton"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Calificar punto" />
 
         <Button
             android:id="@+id/idVerComentariosCarton"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Ver comentarios " />
     </LinearLayout>

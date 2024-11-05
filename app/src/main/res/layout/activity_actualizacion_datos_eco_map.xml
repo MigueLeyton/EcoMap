@@ -33,57 +33,65 @@
 
         <TextView
             android:id="@+id/textView13"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="25dp"
+            android:layout_gravity="center"
             android:text="Nombre del punto" />
 
         <EditText
             android:id="@+id/editTextText"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:padding="16dp"
             android:hint="Ingrese el nombre"
             />
 
         <TextView
             android:id="@+id/textView14"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="25dp"
+            android:layout_gravity="center"
             android:text="Dirección" />
 
         <EditText
             android:id="@+id/editTextText2"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="wrap_content"
             android:padding="16dp"
+            android:layout_gravity="center"
             android:hint="Ingrese la dirección"
             />
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="25dp"
+            android:layout_gravity="center"
             android:text="Tipo de punto" />
 
         <EditText
             android:id="@+id/editTextText3"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="wrap_content"
             android:padding="16dp"
+            android:layout_gravity="center"
             android:hint="Ingrese el tipo de punto"
             />
 
         <TextView
             android:id="@+id/textView16"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="25dp"
+            android:layout_gravity="center"
             android:text="Fecha" />
 
         <EditText
             android:id="@+id/editTextDate"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="wrap_content"
             android:padding="16dp"
+            android:layout_gravity="center"
             android:hint="Ingrese la fecha" />
 
         <Space
@@ -92,21 +100,24 @@
 
         <TextView
             android:id="@+id/textView17"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="25dp"
+            android:layout_gravity="center"
             android:text="Activo" />
 
         <RadioButton
             android:id="@+id/radioButton"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:padding="5dp"
             android:text="Si" />
 
         <RadioButton
             android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:padding="5dp"
             android:text="No" />
 
@@ -116,15 +127,17 @@
 
         <Button
             android:id="@+id/idGuardarActualizacion"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Guardar" />
 
         <Button
             android:id="@+id/idCancelarActualizacion"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Cancelar" />
 

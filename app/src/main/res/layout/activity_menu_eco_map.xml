@@ -54,43 +54,49 @@
 
         <Button
             android:id="@+id/idVidrio"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Vidrio" />
 
         <Button
             android:id="@+id/idPlastico"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Plástico" />
 
         <Button
             android:id="@+id/idCarton"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Cartón" />
 
         <Button
             android:id="@+id/idOrganica"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Orgánica" />
 
         <Button
             android:id="@+id/idGeneral"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="General" />
 
         <Button
             android:id="@+id/idHistorica"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Histórica" />
 

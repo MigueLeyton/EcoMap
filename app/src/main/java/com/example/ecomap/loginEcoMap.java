@@ -64,18 +64,19 @@ public class loginEcoMap extends AppCompatActivity {
 
     // Método para iniciar sesión
     private void iniciarSesion() {
-        String nombre = editTextNombre.getText().toString();
-        String password = editTextPassword.getText().toString();
+        String nombreCompleto = editTextNombre.getText().toString().trim();
+        String password = editTextPassword.getText().toString().trim();
 
         // Lógica del inicio de sesión
-        if (nombre.isEmpty() || password.isEmpty()) {
+        if (nombreCompleto.isEmpty() || password.isEmpty()) {
             Toast.makeText(this, "Por favor, completa todos los campos.", Toast.LENGTH_SHORT).show();
         } else {
             // Verificar usuario en la base de datos
-            if (baseDeDatos.verificarUsuario(nombre, password)) {
+            if (baseDeDatos.verificarUsuario(nombreCompleto, password)) {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
-                // Redirigir al activity menuEcoMap
-                Intent intent = new Intent(loginEcoMap.this, menuEcoMap.class);
+                // Redirigir al activity loginMenuEcoMap
+                Intent intent = new Intent(loginEcoMap.this, loginMenuEcoMap.class);
+                intent.putExtra("NOMBRE_USUARIO", nombreCompleto); // Pasar el nombre completo
                 startActivity(intent);
                 finish();
             } else {
@@ -83,5 +84,4 @@ public class loginEcoMap extends AppCompatActivity {
             }
         }
     }
-
 }

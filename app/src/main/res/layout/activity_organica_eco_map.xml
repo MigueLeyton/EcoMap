@@ -38,29 +38,33 @@
 
         <Button
             android:id="@+id/idActualizarDatosOrganica"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Actualizar datos " />
 
         <Button
             android:id="@+id/idDejarComentarioOrganica"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Dejar comentario" />
 
         <Button
             android:id="@+id/idCalificarPuntoOrganica"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Calificar punto " />
 
         <Button
             android:id="@+id/idVerComentariosOrganica"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Ver comentarios " />
     </LinearLayout>

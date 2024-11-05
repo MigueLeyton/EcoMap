@@ -54,27 +54,31 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="25dp"
+            android:layout_gravity="center"
             android:text="Nombre" />
 
         <EditText
             android:id="@+id/idNombre"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="wrap_content"
-            android:hint="Ingrese su nombre"
+            android:layout_gravity="center"
+            android:hint="Ingrese su nombre y apellido"
             android:padding="16dp" />
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="25dp"
+            android:layout_gravity="center"
             android:text="Contraseña" />
 
         <EditText
             android:id="@+id/idPassword"
-            android:layout_width="match_parent"
+            android:layout_width="355dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:hint="Ingrese su contraseña"
             android:inputType="textPassword"
             android:padding="16dp"/>
@@ -85,8 +89,9 @@
 
         <Button
             android:id="@+id/idInicio"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:gravity="center"
             android:text="Inicio" />
@@ -109,15 +114,17 @@
 
         <Button
             android:id="@+id/idRegistrarRegistro"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Registrar" />
 
         <Button
             android:id="@+id/idSalir"
-            android:layout_width="match_parent"
+            android:layout_width="275dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Salir" />
 

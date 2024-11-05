@@ -58,7 +58,7 @@ public class menuEcoMap extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                Intent intent = new Intent(menuEcoMap.this, loginEcoMap.class);
+                Intent intent = new Intent(menuEcoMap.this, loginMenuEcoMap.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK); // Limpia la pila de actividades
                 startActivity(intent);
                 finish(); // Cierra la actividad actual
