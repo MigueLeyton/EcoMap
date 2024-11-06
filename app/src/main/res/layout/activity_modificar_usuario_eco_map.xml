@@ -38,6 +38,10 @@
             android:layout_gravity="center"
             android:hint="Nuevo Nombre" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <EditText
             android:id="@+id/idNuevoApellidoModificar"
             android:layout_width="360dp"
@@ -45,12 +49,20 @@
             android:layout_gravity="center"
             android:hint="Nuevo Apellido" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <EditText
             android:id="@+id/idNuevoCorreoModificar"
             android:layout_width="360dp"
             android:layout_height="68dp"
             android:layout_gravity="center"
             android:hint="Nuevo Correo Electrónico" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <EditText
             android:id="@+id/editTextNuevaContrasena"
@@ -60,6 +72,10 @@
             android:hint="Nueva Contraseña"
             android:inputType="textPassword" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
         <EditText
             android:id="@+id/editTextNuevaContrasenaRepetir"
             android:layout_width="360dp"
@@ -67,6 +83,10 @@
             android:layout_gravity="center"
             android:hint="Repetir Nueva Contraseña"
             android:inputType="textPassword" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
 
         <Button
             android:id="@+id/idGuardarCambios"

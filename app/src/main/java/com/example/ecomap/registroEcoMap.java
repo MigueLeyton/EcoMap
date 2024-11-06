@@ -21,7 +21,7 @@ public class registroEcoMap extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbarRegistro);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Registro");
+        getSupportActionBar().setTitle("Registro de usuario");
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
 
         // Configurar campos de entrada

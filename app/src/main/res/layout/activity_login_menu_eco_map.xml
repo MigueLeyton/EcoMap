@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="¿Que es la ecología?" />
+            android:text="EcoMap" />
 
         <Button
             android:id="@+id/btnSalirUsuarioMenu"

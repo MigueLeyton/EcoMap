@@ -157,7 +157,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="¿Qué es la Ecología?"
-
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
@@ -179,6 +178,17 @@ En este sentido, el concepto de ecología humana se refiere al estudio científi
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
+            <TextView
+                android:id="@+id/featuresTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Plástico"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
             <!-- Sección de imágenes sobre Ecología -->
             <ImageView
                 android:id="@+id/image3"
@@ -192,6 +202,17 @@ En este sentido, el concepto de ecología humana se refiere al estudio científi
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
 
+            <TextView
+                android:id="@+id/featuresTitle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Vidrio"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
             <ImageView
                 android:id="@+id/image4"
                 android:layout_width="match_parent"
@@ -204,6 +225,17 @@ En este sentido, el concepto de ecología humana se refiere al estudio científi
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
 
+            <TextView
+                android:id="@+id/featuresTitle5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cartón"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
             <ImageView
                 android:id="@+id/image5"
                 android:layout_width="match_parent"
@@ -215,6 +247,17 @@ En este sentido, el concepto de ecología humana se refiere al estudio científi
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/featuresTitle6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Orgánica"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
 
             <ImageView
                 android:id="@+id/imagen6"

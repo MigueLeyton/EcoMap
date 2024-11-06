@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/plandeestudios01_esp_pres_01_768x1018"
     tools:context=".vidrioEcoMap">
 
-    <ImageView
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarVidrio"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/plandeestudios01_esp_pres_01_768x1018"/>
+        android:layout_height="wrap_content"
+        android:alpha="0.9"
+        android:background="@color/material_dynamic_primary30"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
-    <LinearLayout
+    <!-- Contenedor para el mapa -->
+    <RelativeLayout
+        android:id="@+id/map_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="482dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarVidrio"
+        <!-- Fragmento para el mapa -->
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alpha="0.9"
-            android:background="@color/material_dynamic_primary30"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme" />
+            android:layout_height="match_parent" />
+    </RelativeLayout>
 
 
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="match_parent"
-            android:layout_height="313dp"
-            app:srcCompat="@drawable/google_maps_2" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
 
-        <Button
-            android:id="@+id/idActualizarDatosVidrio"
-            android:layout_width="275dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Actualizar datos" />
+    <Button
+        android:id="@+id/idActualizarDatosVidrio"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/material_on_surface_disabled"
+        android:text="Actualizar datos" />
 
-        <Button
-            android:id="@+id/idDejarComentarioVidrio"
-            android:layout_width="275dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Dejar comentario" />
+    <Button
+        android:id="@+id/idDejarComentarioVidrio"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/material_on_surface_disabled"
+        android:text="Dejar comentario" />
 
-        <Button
-            android:id="@+id/idCalificarPuntoVidrio"
-            android:layout_width="275dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Calificar punto " />
+    <Button
+        android:id="@+id/idCalificarPuntoVidrio"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/material_on_surface_disabled"
+        android:text="Calificar punto " />
 
-        <Button
-            android:id="@+id/idVerComentariosVidrio"
-            android:layout_width="275dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Ver comentarios" />
+    <Button
+        android:id="@+id/idVerComentariosVidrio"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/material_on_surface_disabled"
+        android:text="Ver comentarios" />
 
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</android.widget.LinearLayout>
