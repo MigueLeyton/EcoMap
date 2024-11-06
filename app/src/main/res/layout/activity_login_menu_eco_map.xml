@@ -30,7 +30,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="13dp" />
+            android:layout_height="63dp" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -41,7 +41,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="13dp" />
+            android:layout_height="29dp" />
 
         <Button
             android:id="@+id/btnIrTiposMenu"
@@ -57,23 +57,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Ver mis datos" />
+            android:text="Ver datos" />
 
         <Button
-            android:id="@+id/btnModificarUsuario"
+            android:id="@+id/btnVerInformacion"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Modificar usuario" />
-
-        <Button
-            android:id="@+id/btnEliminarUsuario"
-            android:layout_width="275dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/material_on_surface_disabled"
-            android:text="Eliminar usuario" />
+            android:text="¿Que es la ecología?" />
 
         <Button
             android:id="@+id/btnSalirUsuarioMenu"
@@ -82,59 +74,6 @@
             android:layout_gravity="center"
             android:backgroundTint="@color/material_on_surface_disabled"
             android:text="Salir" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="13dp" />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="8dp"
-            android:backgroundTint="@color/material_on_primary_disabled"
-            app:cardElevation="4dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/titulo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:padding="16dp"
-                    android:text="¿Qué es la Ecología?"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:id="@+id/descripcionLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:visibility="gone">
-
-                    <ImageView
-                        android:id="@+id/imagenEcologia"
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/ecologia" />
-
-                    <TextView
-                        android:id="@+id/descripcion"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="La ecología es una disciplina científica que examina cómo los organismos interactúan entre sí y con su entorno."
-                        android:textSize="14sp" />
-                </LinearLayout>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

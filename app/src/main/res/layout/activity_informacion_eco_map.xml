@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".informacionEcoMap">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/crema" />
+
+    <!-- ScrollView para hacer el contenido desplazable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <!-- Contenedor principal para todo el contenido -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Imagen de encabezado -->
+            <ImageView
+                android:id="@+id/headerImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ecomap"
+                android:contentDescription="Encabezado EcoMap" />
+
+            <!-- Título de la sección -->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bienvenidos a EcoMap"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Descripción -->
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_dynamic_secondary70"
+                android:text="Descubre los mejores sitios ecológicos y aprende sobre el impacto positivo en el ambiente."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Sección de características o beneficios -->
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_dynamic_secondary70"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/featuresTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Características:"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Características -->
+                <TextView
+                    android:id="@+id/feature1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Mapas interactivos para explorar sitios ecológicos"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/feature2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Información detallada sobre los beneficios ecológicos"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/feature3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Consejos y trucos para cuidar el medio ambiente"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/feature4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Opciones de reciclaje y sostenibilidad disponibles"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="6dp"/>
+
+            </LinearLayout>
+
+            <!-- Sección de Imágenes informativas -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ecologiasocial"
+                    android:contentDescription="Imagen 1 sobre Ecología"/>
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/arbol"
+                    android:contentDescription="Imagen 2 sobre Ecología"/>
+
+            </LinearLayout>
+
+            <!-- Sección de explicación sobre Ecología -->
+            <TextView
+                android:id="@+id/featuresTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="¿Qué es la Ecología?"
+
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/descriptionText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_dynamic_secondary70"
+                android:text="La ecología es una rama de la biología que estudia las interacciones entre los seres vivos y su entorno. Estas relaciones afectan la biodiversidad y la sostenibilidad del planeta. Conocer la ecología es vital para preservar nuestros ecosistemas y tomar decisiones responsables hacia un futuro más verde. El objeto de estudio de la ecología determina cómo los factores abióticos (humedad, temperatura, entre otros) interactúan con los factores bióticos (relación entre la gran diversidad de seres vivos que se encuentran en un mismo hábitat).
+En este sentido, el concepto de ecología humana se refiere al estudio científico de las relaciones entre los seres humanos y el medio ambiente. Son las condiciones naturales, las interacciones y los aspectos económicos, psicológicos, sociales y culturales."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <!-- Sección de imágenes sobre Ecología -->
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/trabajo"
+                android:contentDescription="Imagen sobre plastico"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/trabajovidrio"
+                android:contentDescription="Imagen sobre vidrio"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carton"
+                android:contentDescription="Imagen sobre carton"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <ImageView
+                android:id="@+id/imagen6"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/organica"
+                android:contentDescription="Imagen sobre organica"/>
+
+            <!-- Sección de Testimonios -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_dynamic_secondary70"
+                android:padding="16dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:text="Testimonios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:text="“EcoMap ha transformado mi forma de ver el medio ambiente. ¡Es increíble descubrir lugares ecológicos cerca de mí!”"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:text="“Gracias a EcoMap, he aprendido muchos consejos prácticos para cuidar el planeta. ¡Altamente recomendado!”"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EcoMap</string>
+    <string-array name="feature_options">
+        <item>Mapas interactivos</item>
+        <item>Beneficios ecológicos</item>
+        <item>Consejos ecológicos</item>
+    </string-array>
 </resources>

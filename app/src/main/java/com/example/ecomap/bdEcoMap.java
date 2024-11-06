@@ -7,6 +7,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class bdEcoMap extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "mi_base_datos.db";
@@ -151,5 +154,19 @@ public class bdEcoMap extends SQLiteOpenHelper {
         if (db != null && db.isOpen()) {
             db.close();
         }
+    }
+
+    public List<String> getAllUsers() {
+        List<String> users = new ArrayList<>();
+        Cursor cursor = db.rawQuery("SELECT nombre, apellido FROM usuarios", null);
+        if (cursor.moveToFirst()) {
+            do {
+                String nombre = cursor.getString(cursor.getColumnIndexOrThrow("nombre"));
+                String apellido = cursor.getString(cursor.getColumnIndexOrThrow("apellido"));
+                users.add(nombre + " " + apellido);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        return users;
     }
 }
